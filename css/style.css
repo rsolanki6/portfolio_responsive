@@ -1,0 +1,740 @@
+:root 
+{
+--bg-darkgray:#1f1f1f;
+--bg-white:#ffffff;
+--bg-lightgray:#262626;
+--bg-lightgray1:#343434;
+--text-darkgray:#1f1f1f;
+--text-white:#ffffff;
+--text-lightgray:#262626;
+--text-lightgray1:#343434; 
+}
+
+/* Body */
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background: var(--bg-darkgray);
+    color: var(--text-white);
+}
+
+#main{
+    width: 96%;
+    height: auto;
+    margin: auto;
+    padding: 10px 10px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* Leftsidebar */
+
+.leftsidebar{
+    width: 26%;
+    height: 92vh;
+    border: solid 1px white;
+    border-radius: 15px;
+    position: fixed;
+    padding: 15px;
+}
+
+.leftsidebar-mobile{
+    display: none;
+}
+
+.navbar-links li{
+    padding: 25px 5px;
+    font-size: 25px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar-links li a{
+    list-style: none;
+    text-decoration: none;
+    color: snow;
+}
+
+
+/* Rightsidebar */
+
+.rightsidebar{
+    width: 70%;
+    height: auto;
+    padding: 15px;
+    margin-left: 30%;
+}
+
+.banners{
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    padding: 20px;
+    border: solid 1px transparent;
+    margin-top: 5%;
+    margin-bottom: 19%;
+    display: flex;
+}
+
+.banners-txt{
+    width: 60%;
+    height: auto;
+    animation: 1s fadeInLeft alternate;
+}
+
+.banners-txt h1{
+    font-size: 65px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.banners-txt h2{
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 0.2;
+}
+
+.banners-txt h3{
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1;
+}
+
+.banners-txt #btn1{
+    width: 180px;
+    height: auto;
+    font-size: 20px;
+    padding: 15px 0px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--bg-white);
+}
+
+.banners-txt #btn2{
+    width: 180px;
+    height: auto;
+    font-size: 20px;
+    padding: 15px 0px;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin-left: 2%;
+    color: white;
+    background-color: transparent;
+}
+
+
+.banners-photo{
+    width: 50%;
+    height: auto;
+    animation: 1s fadeInRight alternate;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.banners-photo img{
+    width: 75%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 15px 15px 10px gray;
+}
+
+
+
+
+/* Get to know me */
+
+.get-to-know-me{
+    width: 96%;
+    height: auto;
+    margin: auto;
+    padding: 2.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 10%;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile{
+    width: 30%;
+    background-color: var(--bg-lightgray);
+    border-radius: 30px;
+    padding: 40px;
+    text-align: center;
+    border-top: 5px solid white;
+    position: relative;
+    overflow: hidden;
+    animation: 1s fadeInUp alternate;
+}
+
+.profile-img{
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.profile-content{
+    text-align: center;
+}
+
+.profile-content h3{
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.profile-content h4{
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.content-links{
+    padding: 5px;
+}
+
+.content-links a{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 12px;
+    font-size: 19px;
+    background-color: var(--bg-lightgray);
+}
+
+.content-links a:hover{
+    background-color: #ffffff;
+    color: black;
+}
+
+.know-me-txt{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    padding: 15px;
+    /* border: 1px solid white; */
+    animation: 1s fadeInRight alternate;
+}
+
+.section-header{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.badge-txt{
+    width: 200px;
+    padding: 12px;
+    color: black;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.section-header h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.stats-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    background-color: var(--surface-color);
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.stat-number{
+    font-size: 20px;
+}
+
+.stat-label{
+    font-size: 15px;
+    color: lightgray;
+}
+
+.detail-row{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    margin: 2px;
+    gap: 5px;
+}
+
+.detail-label{
+    display: block;
+    color: lightgray;
+    margin-bottom: 5px;
+}
+
+.cta-section{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 8%;
+}
+
+.cta-section a{
+    list-style: none;
+    text-decoration: none;
+    /* color: white; */
+}
+
+.btn-primary{
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-right: 3%;
+}
+
+.btn-primary:hover{
+    box-shadow: 0px 5px 13px white;
+    transition: all 0.5s;
+    border: none;
+}
+
+.btn-outline{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.btn-outline:hover{
+    transition: all 0.5s;
+    border: 2px solid white;
+    
+}
+
+#stats{
+    margin-top: 8%;
+    padding: 5px;
+}
+
+.slider{
+    width: 100%;
+    height: auto;
+}
+
+.stats-wrapper{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.container{
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding: 30px;
+    background-color: var(--bg-lightgray1);
+    /* border-radius: 15px; */
+    border: 1px solid black;
+}
+
+.clients{
+    width: 90%;
+    height: auto;
+    text-align: center;
+    background-color: var(--bg-lightgray);
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.clients h1{
+    font-size: 30px;
+}
+
+.clients p{
+    font-size: 20px;
+}
+
+.icon-wrapper{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--bg-lightgray1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 30px;
+    margin-top: 2%;
+}
+
+.icon-wrapper:hover{
+    animation:  1s pulse forwards;
+    transition: transform 0.3s ease;
+}
+
+
+
+/* Skills */
+.skills{
+    width: 98%;
+    height: auto;
+    padding: 10px;
+    /* border: solid 1px white; */
+    margin-top: 5%;
+}
+
+.skills-header{
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    font-family: "Ubuntu", sans-serif;;
+}
+
+.techonologies-use{
+    width: 98%;
+    height: auto;
+    margin: 2%;
+    padding: 5px;
+    display: flex;
+}
+
+.frontend{
+    width: 50%;
+    margin: 4%;
+    padding: 20px;
+    background-color: var(--bg-lightgray);
+    border-radius: 20px;
+}
+
+.frontend-content{
+    width: 100%;
+    margin-top: 10%;
+}
+
+
+.backend{
+    width: 50%;
+    margin: 4%;
+    padding: 35px;
+    background-color: var(--bg-lightgray);
+    border-radius: 20px;
+}
+
+
+.backend-content{
+    width: 100%;
+    margin-top: 10%;
+}
+
+
+/* Resume */
+.resume{
+    width: 98%;
+    height: auto;
+    padding: 15px;
+    border: solid 1px white;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+.resume-header {
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    font-family: "Ubuntu", sans-serif;;
+}
+
+.resume .resume-side {
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.resume .resume-side h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.resume .resume-side .profile-img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid gray;
+    border-radius: 12px;
+}
+
+.leftside{
+    width: 100%;
+    height: 180vh;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(164, 160, 160, 0.1);
+}
+
+.leftside h3{
+    text-align: center;
+    display: flex;
+}
+
+.contact-info li{
+    margin-top: 10%;
+    list-style-type: none;
+    margin-left: -20%;
+    font-size: 16px;
+    padding: 2px;
+}
+
+.skill-item{
+    width: 100%;
+    margin-top: 4%;
+}
+
+
+.flex-container{
+    display: flex !important;
+}
+
+.flex-container .leftside{
+    width: 30%;
+    margin-right: 5%;
+    padding: 15px;
+    /* border-right: 2px solid gray; */
+}
+
+/* Portfolio */
+.portfolio{
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    border: solid 1px white;
+    margin-top: 5%;     
+}
+
+
+/* Contact us */
+.contact-us{
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    border: solid 1px white;
+    margin-top: 5%;     
+}
+
+/* Media Query */
+
+/* 📱 MOBILE VIEW (for screen width 768px and below) */
+@media only screen and (max-width: 768px) {
+
+    /* ----- GENERAL ----- */
+    body {
+        overflow-x: hidden;
+    }
+
+    #main {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* ----- SIDEBARS ----- */
+    .leftsidebar {
+        display: none;
+    }
+
+    .leftsidebar-mobile {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #212529;
+        color: white;
+        padding: 12px 20px;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    #menu-btn {
+        background: transparent;
+        color: white;
+        border: none;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    /* hidden menu by default */
+    #mobile-menu {
+        display: none;
+        background: #343a40;
+        padding: 10px 0;
+        border-radius: 0 0 10px 10px;
+    }
+
+    /* show menu when active */
+    #mobile-menu.active {
+        display: block;
+        animation: fadeIn 0.4s ease-in-out;
+    }
+
+    #mobile-menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #mobile-menu ul li {
+        padding: 12px 0;
+        text-align: center;
+    }
+
+    #mobile-menu ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        font-size: 18px;
+        border-bottom: 1px solid #495057;
+    }
+
+    #mobile-menu ul li a:hover {
+        background: #0d6efd;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ----- RIGHT SIDEBAR ----- */
+    .rightsidebar {
+        width: 100%;
+        margin-left: 0;
+        padding-top: 70px; /* space for fixed menu */
+    }
+
+    /* ----- BANNER SECTION ----- */
+    .banners {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .banners-txt {
+        width: 100%;
+        padding: 10px;
+        margin-left: 2%;
+        font-size: 10px;
+    }
+
+    .banners-txt h1 {
+        font-size: 40px;
+    }
+
+    .banners-txt h2 {
+        font-size: 28px;
+    }
+
+    .banners-txt h3 {
+        font-size: 20px;
+    }
+
+    .banners-txt #btn1,
+    .banners-txt #btn2 {
+        width: 90%;
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .banners-photo {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .banners-photo img {
+        width: 80%;
+        border-radius: 10px;
+    }
+
+    /* ----- GET TO KNOW ME ----- */
+    .get-to-know-me {
+        width: 85%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .profile {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .know-me-txt {
+        width: 95%;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 2fr;
+        padding: 1rem;
+        gap: 10px;
+    }
+
+    .detail-row {
+        grid-template-columns: 1fr;
+    }
+
+    /* ----- STATS SECTION ----- */
+    .stats-wrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .clients {
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* ----- SKILLS ----- */
+    .techonologies-use {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .frontend, .backend {
+        width: 90%;
+        margin: 15px 0;
+    }
+
+    progress {
+        width: 100%;
+    }
+
+    /* ----- GENERAL TEXT SCALING ----- */
+    h1, h2, h3, h4, p, a, span {
+        font-size: 95%;
+    }
+}
